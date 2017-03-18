@@ -22,4 +22,12 @@ public class Clase {
        }
        System.out.println("La media es "+((float)aux/notas.length));
    }
+   public void notaAlta(){
+    int mejorNota=0;
+    for(int i=0;i<notas.length;i++){
+        if(notas[i]>mejorNota)
+            mejorNota=notas[i];
+    }
+       System.out.println("La nota mas alta es "+mejorNota);
+}
 }
