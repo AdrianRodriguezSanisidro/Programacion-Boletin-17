@@ -52,4 +52,20 @@ public class Clase {
        }
            
    }
+   public void ordenarPorNota(){
+       int aux;
+       String auxAlumno;
+       for(int i=0;i<notas.length-1;i++)
+           for(int j=i+1;j<notas.length;j++)
+               if(notas[i]>notas[j]){
+                    aux=notas[i];
+                    notas[i]=notas[j];
+                    notas[j]=aux;
+                    auxAlumno=alumnos[i];
+                    alumnos[i]=alumnos[j];
+                    alumnos[j]=auxAlumno;
+               }
+       for(int i=0;i<notas.length-1;i++)
+           System.out.println(alumnos[i]+" "+notas[i]);
+   }
 }
