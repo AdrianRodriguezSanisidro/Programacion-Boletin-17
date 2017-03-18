@@ -15,4 +15,11 @@ public class Clase {
     }
        System.out.println("Aprobaron "+aprobados+" y suspendieron "+suspensos);
 }
+   public void calcularMedia(){
+       int aux=0;
+       for(int i=0;i<notas.length;i++){
+           aux=aux+notas[i];
+       }
+       System.out.println("La media es "+((float)aux/notas.length));
+   }
 }
